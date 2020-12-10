@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #4e5150;
+  font-family: "Montserrat", sans-serif;
+}
+
+/****************** utilities **************/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.xAxis-center {
+  display: flex;
+  justify-content: center;
+}
+.yAxis-center {
+  display: flex;
+  align-items: center;
+}
+.inline-block {
+  display: flex;
+  justify-content: space-between;
+}
+.gray1--textcolor {
+  color: #333333;
+}
+.gray2--textcolor {
+  color: #4f4f4f;
+}
+.gray3--textcolor {
+  color: #828282;
+}
+.orange--textcolor {
+  color: #f2994a;
+}
+.gray4--textcolor {
+  color: #828282;
+}
+.gray4--textcolor {
+  color: #a9a9a9;
+}
+.xsm--textsize {
+  font-size: clamp(1rem, 0.9296rem + 0.1878vw, 1.2rem);
+  line-height: 1.9rem;
+}
+.sm--textsize {
+  font-size: clamp(1.2rem, 1.0592rem + 0.3756vw, 1.6rem);
+}
+.staticSm--textsize {
+  font-size: 1.6rem;
+}
+.lg--textsize {
+  font-size: clamp(1.4rem, 1.2592rem + 0.3756vw, 1.8rem);
+  line-height: 3.5rem;
+}
+.xl--textsize {
+  font-size: clamp(2.4rem, 1.9775rem + 1.1268vw, 3.6rem);
+}
+.removeBorder {
+  border: none;
+}
+.addBorder {
+  border: solid;
+  padding: 0.6rem 0;
+  border-color: #828282;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/****************** utilities END **************/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  margin: 5rem auto;
+}
+.checkout__form {
+  margin: auto;
+  width: clamp(34.9rem, 30.8155rem + 10.892vw, 46.5rem);
+}
+.checkout__header {
+  line-height: 4rem;
+  margin: 2rem 0;
+}
+.contactInformation {
+  margin-bottom: 3.5rem;
+}
+
+.material-icons {
+  margin: 0 1rem;
+}
+input:focus {
+  outline: none;
+}
+input {
+  flex: 1 1 auto;
+}
+.country-postalcode-inline-block {
+  justify-content: space-between;
+  width: auto;
+}
+.country__input,
+.postalcode__input {
+  width: clamp(16.2rem, 14.2634rem + 5.1643vw, 21.7rem);
+}
+.country__input {
+  margin-right: 1.5rem;
+}
+
+.postalcode__input .input {
+  width: 10.75rem;
+}
+.country__input .input {
+  flex: 1 1 auto;
+  margin-right: 1rem;
+}
+.country__input .input:focus {
+  outline: none;
+}
+
+.country__dropDown {
+  background-color: #e0e0e0;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.checkbox__box {
+  border: solid;
+  border-color: #828282;
+  border-radius: 2px;
+  margin-right: 1rem;
+  flex: 0;
+}
+.btn {
+  background-color: #f2994a;
+  float: right;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  border: none;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  width: 16.6rem;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  background-color: #f38e35;
+}
+
+.cart {
+  width: clamp(35rem, 33.838rem + 3.0986vw, 38.3rem);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: auto;
+}
+.item {
+  width: clamp(12.27rem, 11.8651rem + 1.0798vw, 13.42rem);
+  margin: clamp(1.5rem, 0.9718rem + 1.4085vw, 3rem);
+  border-radius: 10px;
+}
+.itemcard__info {
+  height: clamp(12.4rem, 12.0127rem + 1.0329vw, 13.5rem);
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.item__name {
+  grid-row: 1;
+}
+.item__price {
+  grid-row: 2;
+}
+.item__beforeprice {
+  margin-left: 0.6rem;
+}
+.quantity {
+  grid-row: 4;
+  justify-content: space-around;
+  padding: 1.2rem 0;
+  width: 13.4rem;
+  border: solid;
+  border-color: #828282;
+  border-width: 1px;
+  border-radius: 10px;
+}
+.remove,
+.add {
+  height: 2.1rem;
+  width: 2.1rem;
+  background-color: #e0e0e0;
+  text-align: center;
+  border-radius: 3px;
+}
+.remove__text,
+.add__text {
+  cursor: pointer;
+}
+hr {
+  width: clamp(29.9rem, 28.9141rem + 2.6291vw, 32.7rem);
+  margin: 0 auto;
+}
+.shipping,
+.total {
+  display: flex;
+  justify-content: space-between;
+  width: clamp(29.9rem, 28.9141rem + 2.6291vw, 32.7rem);
+  margin: 0.9rem auto;
+  text-align: left;
+}
+.total {
+  margin-bottom: 1.6rem;
+}
+footer {
+  margin: 3rem 0;
+}
+@media (min-width: 767px) and (max-width: 816px) {
+  .cart {
+    width: 33rem;
+  }
+  hr {
+    width: 28rem;
+  }
+  .shipping,
+  .total {
+    width: 28rem;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .checkout__form {
+    margin-top: 2.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .checkout__form {
+    width: clamp(29rem, 11.9107rem + 53.5714vw, 32rem);
+  }
+  input {
+    width: auto;
+  }
+  .input {
+    width: auto;
+  }
+  .inline-block {
+    flex-direction: column;
+  }
+  .country__input,
+  .postalcode__input {
+    width: auto;
+  }
+  .country__input {
+    margin-right: 0;
+  }
+
+  .cart {
+    width: clamp(30rem, 12.9107rem + 53.5714vw, 33rem);
+  }
+  hr {
+    width: 27rem;
+  }
+  .shipping,
+  .total {
+    width: 27rem;
+  }
+}

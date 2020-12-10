@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Devchallenges</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="checkout__form">
+        <h1 class="checkout__header xl--textsize">Checkout</h1>
+        <div class="contactInformation">
+          <p class="contactInformation__title gray1--textcolor lg--textsize">
+            Contact information
+          </p>
+          <form action="">
+            <label for="">
+              <p class="email gray2--textcolor xsm--textsize">E-mail</p>
+              <div
+                class="email__input addBorder yAxis-center gray3--textcolor sm--textsize"
+              >
+                <span class="material-icons"> local_post_office </span
+                ><input
+                  class="removeBorder"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email.."
+                />
+              </div>
+            </label>
+
+            <label for="">
+              <p class="phone gray2--textcolor xsm--textsize">Phone</p>
+              <div
+                class="phone__input yAxis-center gray3--textcolor sm--textsize addBorder"
+              >
+                <span class="material-icons"> local_phone </span>
+                <input
+                  class="removeBorder"
+                  type="text"
+                  name="phone"
+                  placeholder="Enter your phone..."
+                  maxlength="13"
+                />
+              </div>
+            </label>
+          </form>
+        </div>
+        <div class="shippingAddress">
+          <p class="shippingAddress__title gray1--textcolor lg--textsize">
+            Shipping address
+          </p>
+          <form action="">
+            <label for="">
+              <p class="fullName gray2--textcolor xsm--textsize">Full Name</p>
+              <div
+                class="fullName__input addBorder yAxis-center gray3--textcolor sm--textsize"
+              >
+                <span class="material-icons"> account_circle </span
+                ><input
+                  class="removeBorder"
+                  type="text"
+                  name="fullName"
+                  placeholder="Your name.."
+                />
+              </div>
+            </label>
+
+            <label for="">
+              <p class="address gray2--textcolor xsm--textsize">Address</p>
+              <div
+                class="address__input addBorder yAxis-center gray3--textcolor sm--textsize"
+              >
+                <span class="material-icons"> home </span>
+                <input
+                  class="removeBorder"
+                  type="text"
+                  name="address"
+                  placeholder="Your address.."
+                />
+              </div>
+            </label>
+
+            <label for="">
+              <p class="city gray2--textcolor xsm--textsize">City</p>
+              <div
+                class="city__input addBorder yAxis-center gray3--textcolor sm--textsize"
+              >
+                <span class="material-icons"> location_city </span>
+                <input
+                  class="removeBorder"
+                  type="text"
+                  name="city"
+                  placeholder="Your city.."
+                />
+              </div>
+            </label>
+
+            <!-- country and postal input field -->
+            <div class="inline-block country-postalcode-inline-block">
+              <label for="">
+                <p class="country gray2--textcolor xsm--textsize">Country</p>
+                <div
+                  class="country__input addBorder yAxis-center gray3--textcolor sm--textsize"
+                >
+                  <span class="material-icons"> public </span>
+                  <select
+                    name="country-names"
+                    class="removeBorder input gray3--textcolor sm--textsize"
+                    id="country__dropDownMenu"
+                  >
+                    <option value="">Your Country</option>
+                    <option value="India">India</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                  </select>
+                  <!-- <input
+                    class="removeBorder input"
+                    type="text"
+                    name="country"
+                    placeholder="Your country"
+                  />
+
+                  <div class="dropDown country__dropDown">
+                    <span class="material-icons"> keyboard_arrow_down </span>
+                  </div> -->
+                </div>
+              </label>
+
+              <label for="">
+                <p class="postalcode gray2--textcolor xsm--textsize">
+                  Postal code
+                </p>
+                <div
+                  class="postalcode__input addBorder yAxis-center gray3--textcolor sm--textsize"
+                >
+                  <span class="material-icons"> markunread_mailbox </span>
+                  <input
+                    class="removeBorder input"
+                    type="text"
+                    name="Postalcode"
+                    placeholder="Your Postal code"
+                    maxlength="20"
+                  />
+                </div>
+              </label>
+            </div>
+          </form>
+        </div>
+
+        <label for="">
+          <div class="checkbox yAxis-center">
+            <input class="checkbox__box" type="checkbox" />
+            <p class="checkbox__text gray2--textcolor xsm--textsize">
+              Save this information for next time
+            </p>
+          </div>
+        </label>
+        <br />
+        <button class="btn">Continue</button>
+      </div>
+
+      <div class="cart">
+        <div class="item__card yAxis-center">
+          <img src="photo1.png" alt="" class="item" />
+          <div class="itemcard__info">
+            <p class="item__name sm--textsize">Vintage Backbag</p>
+            <p class="item__price sm--textsize">
+              <span class="orange--textcolor">$54.99 </span>
+              <span class="item__beforeprice xsm--textsize"
+                ><s class="priceStriked"> $94.99</s></span
+              >
+            </p>
+            <div
+              class="quantity staticSm--textsize yAxis-center bag-quantity-meter"
+            >
+              <span class="remove"
+                ><p class="remove__text gray4--textcolor">-</p></span
+              >
+              <span class="number">
+                <p class="number__text">1</p>
+              </span>
+              <span class="add">
+                <p class="add__text gray4--textcolor">+</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item__card yAxis-center">
+          <img src="photo2.png" alt="" class="item" />
+          <div class="itemcard__info">
+            <p class="item__name sm--textsize">Levi Shoes</p>
+            <p class="item__price sm--textsize">
+              <span class="orange--textcolor shoe__price">$74.99 </span>
+              <span class="item__beforeprice xsm--textsize"
+                ><s class="priceStriked">$124.99</s></span
+              >
+            </p>
+            <div
+              class="quantity staticSm--textsize yAxis-center shoe-quantity-meter"
+            >
+              <span class="remove">
+                <p class="remove__text gray4--textcolor" unselectable="on">-</p>
+              </span>
+              <span class="number">
+                <p class="number__text">1</p>
+              </span>
+              <span class="add">
+                <p class="add__text gray4--textcolor">+</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="shipping">
+          <p class="gray1--textcolor lg--textsize shipping__text">Shipping</p>
+          <p class="gray1--textcolor lg--textsize shipping__cost">$19</p>
+        </div>
+        <hr />
+        <div class="total">
+          <p class="gray1--textcolor lg--textsize total__text">Total</p>
+          <p class="gray1--textcolor lg--textsize total__cost">$148.98</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="xsm--textsize xAxis-center gray4--textcolor">
+        <a
+          href="https://www.linkedin.com/in/k-shweta-kumari-86a47418a/"
+          class="gray4--textcolor"
+          >Shweta Kumari</a
+        >@
+        <a href="https://devchallenges.io/challenges" class="gray4--textcolor"
+          >DevChallenges.io</a
+        >
+      </p>
+    </footer>
+    <script src="cart.js"></script>
+  </body>
+</html>
